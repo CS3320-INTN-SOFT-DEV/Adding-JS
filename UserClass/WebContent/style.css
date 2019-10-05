@@ -38,6 +38,7 @@ ul {
 
 li {
   float: left;
+  font-family: 'Nanum Gothic', sans-serif;	
 }
 
 li a {
@@ -79,5 +80,5 @@ footer {
   padding: 30px;
   text-align: center;
   color: white;
-  font-family: verdana;
+  font-family: 'Nanum Gothic', sans-serif;
 }
