@@ -23,7 +23,7 @@ header {
     text-align: left;
 }
 .statetitle{
-	font-family: 'Nanum Gothic', sans-serif;
+	font-family: verdana;
 	font-size: 20px;
 }
 
@@ -33,12 +33,10 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  font-family: 'Nanum Gothic', sans-serif;
 }
 
 li {
   float: left;
-  font-family: 'Nanum Gothic', sans-serif;	
 }
 
 li a {
@@ -80,5 +78,5 @@ footer {
   padding: 30px;
   text-align: center;
   color: white;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: verdana;
 }
