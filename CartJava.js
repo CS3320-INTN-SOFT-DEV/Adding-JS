@@ -51,10 +51,15 @@
 // function to validate date
  function checkDate(str)
   {
-    var regexp = /^(\d{1,2}\/\d{4})$/;
-    return regexp.test(str);
+    var re = /^(\d{1,2}\/\d{4})$/;
+    
+      if(form.startdate.value != '' && !form.expdate.value.match(re)) {
+      alert("Invalid date format: " + form.expdate.value);
+      form.expdate.focus();
+      return false;
   }
-   function checkNum(length){
+  
+     function checkNum(length){
      var zipEntry = document.info.zip.value;
      var zipNum = parseInt(zipEntry, 12);
      if (document.info.zip.value.length == length){
@@ -97,4 +102,9 @@ function stringlength(inputtxt, minlength, maxlength)
 	{
 	 document.form1.submit();
 	}
+//function to check form
+ function checkForm(form1)
+  {
+    if(!checkDate(form.expdate)) return false;
 }
+	  
