@@ -51,7 +51,7 @@
 // function to validate date
  function checkDate(str)
   {
-    var regex = /^(\d{1,2}\/\d{4})$/;
+    var regexp = /^(\d{1,2}\/\d{4})$/;
     return regexp.test(str);
   }
    function checkNum(length){
