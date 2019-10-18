@@ -48,6 +48,12 @@
      var regexp = /^(\d{10}|\d{3}-\d{3}-\d{4}|\(\d{3}\)\d{3}-\d{4})$/;
       return regexp.test(str);
    }
+// function to validate date
+ function checkDate(str)
+  {
+    var regex = /^(\d{1,2}\/\d{4})$/;
+    return regexp.test(str);
+  }
    function checkNum(length){
      var zipEntry = document.info.zip.value;
      var zipNum = parseInt(zipEntry, 12);
@@ -85,5 +91,10 @@ function stringlength(inputtxt, minlength, maxlength)
 	{ 
 		alert('Form Saved');
 		return true;
+	}
+//function to submit form
+	function SubmitForm()
+	{
+	 document.form1.submit();
 	}
 }
